@@ -3,8 +3,8 @@
     margin:0,
     autoplay:true,
     autoplayTimeout:4000,
-    nav:true,
-    dots:false,
+    nav:false,
+    dots:true,
     items:1,
     responsive:{
         0:{
@@ -19,6 +19,25 @@
 
 
   $('#owl-2').owlCarousel({
+    loop:true,
+    margin:50,
+    autoplay:false,
+    autoplayTimeout:4000,
+    nav:false,
+    dots:false,
+    items:3,
+    responsive:{
+        0:{
+            items:3
+        },
+        1200:{
+            items:3
+        }
+    }
+});
+
+
+  $('#owl-3').owlCarousel({
     loop:true,
     margin:50,
     autoplay:false,
