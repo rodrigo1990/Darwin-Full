@@ -1,13 +1,33 @@
+@font-face {
+    font-family: raleway;
+    src: url(Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: raleway-m;
+    src: url(Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: raleway-b;
+    src: url(Raleway-Bold.ttf);
+}
+
 body{
     overflow-x: hidden;
 }
 
 
 .subtitle{
-    padding-top:1%;
-    padding-bottom:1%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-family: raleway-b;
 }
 
+.subtitle img{
+   width: 58px;
+    vertical-align: text-top;
+}
 
 .subtitle h2{
     margin:0;
@@ -26,10 +46,18 @@ section:not(#maps,#contacto){
 
 
 section#servicios{
-    padding-top: 3%;
+    padding-top: 0%;
     padding-bottom: 3%;
 }
 
+
+.green{
+    color:#6EC39A;
+}
+
+.iso{
+    width: 50px !important;
+}
 
 
 /*---------------------------------------------*/
@@ -42,6 +70,7 @@ header{
     top:0;
     z-index: 3;
     width: 100%;
+    font-family: raleway;
 }
 
 
@@ -63,6 +92,13 @@ header ul li:not(:first-child){
 
 header ul li a {
     color:white;
+    transition:color 0.5s;
+}
+
+header ul li a:hover{
+    color:#6EC39A;
+    transition: color 0.5s;
+    text-decoration: none;
 }
 
 header ul li a i {
@@ -70,8 +106,8 @@ header ul li a i {
 }
 
 
-header .logo{
-    width: 148px;
+ .logo{
+    width: 148px !important;
 }
 
 .xs-row{
@@ -136,6 +172,7 @@ header .logo{
     /*height: 100px;*/
     width: 552px;
     color:white;
+    font-family: raleway-m;
 
 }
 
@@ -162,7 +199,11 @@ header .logo{
 
 
 .slogan h2{
-    font-size: 422%;
+    font-size: 410%;
+}
+
+.slogan h2 span{
+    font-family: raleway-b; 
 }
 
 .owl-carousel .owl-stage-outer{
@@ -170,18 +211,52 @@ header .logo{
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: -39px !important;
+    margin-top: -339px ;
+    float: right;
+    margin-right: 50px;
 }
 
 .owl-theme .owl-dots .owl-dot span{
-      background: #fdf100 !important;
+      background: white !important;
+    /* border: 1px solid white; */
+    width: 10px;
+    height: 10px;
+    margin: auto;
+
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-      background: #eb5938 !important;
+.owl-theme .owl-dots .owl-dot.active {
+      background: transparent !important;
+      border-color:white;
+      animation: opacity_animation 1s;
 }
 .owl-theme .owl-dots .owl-dot{
   outline:none;
+}
+
+
+.owl-theme .owl-dots .owl-dot {
+    display: block !important;
+    zoom: 1;
+    margin-top: 22px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+
+
+@keyframes opacity_animation{
+
+    0%{
+        opacity:0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
 }
 
 /*---------------------------------------------*/
@@ -190,7 +265,7 @@ header .logo{
 
 
 
-.galeria .slider .overlay{
+.galeria .slider .overlay, #salones .overlay{
 	background: black;
     position: absolute;
     top: 0%;
@@ -211,6 +286,9 @@ header .logo{
     transition-delay: 0s;
     opacity: 0.8;
 }
+
+
+
 
 
 
@@ -239,24 +317,168 @@ header .logo{
 /*----------------------------------------------*/
 
 .salones-home #palmeras{
-    background-color:blue;
-    height: 400px;
+    background: url(../img/salones-home/palmeras.jpg);
+    background-position: -472px -390px;
+    height: 444px;
 }
 
 .salones-home #laguna{
-    background-color:red;
-    height: 400px;
+    background: url(../img/salones-home/laguna.jpg);
+    background-position: -306px -376px;
+    height: 444px;
 }
 
 
 .square{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin:auto;
+       position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 148px;
+    width: 200px;
+    text-align: center;
+    border: 4px solid white;
+    padding: 20px;
+    font-family: raleway-b;
+    color:white;
 }
+
+.square h2 span{
+    color:#6EC39A;
+}
+
+.image-selector{
+    cursor:pointer;
+}
+
+#salones .image-selector .overlay{
+    background: black;
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+
+
+
+#salones .image-selector:hover .overlay{
+ -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    opacity: 0.8;   
+}
+
+
+
+
+
+/*---------------------------------------------*/
+                /*GALERIA PLANOS*/
+/*----------------------------------------------*/
+
+.slide-cont{
+    position:relative;
+}
+
+.datos-square h5{
+    font-family: raleway-b;
+}
+
+
+.datos-square p{
+    font-family: raleway;
+}
+
+.datos-square p span{
+    font-family: raleway-b;
+}
+
+.slide-cont .datos-square{
+    border:4px solid #6EC39A;
+    position:absolute;
+    right:180px;
+    padding:20px;
+
+}
+
+.slide-cont>img{
+    width: 900px !important;
+}
+
+.slide-cont h5{
+    font-size: 1.5rem;
+}
+
+
+.slide-jardin .datos-square,.slide-palmeras .datos-square{
+    background-color: #2D2D2D;
+    border-color:transparent;
+    color:white;
+    top:80px;
+}
+
+
+.slide-jardin{
+        width: 1403px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.slide-jardin>img{
+    margin-top: 100px;
+    width: 900px !important;
+}
+
+.slide-palmeras{
+    width:1228px;
+}
+
+
+.slide-palmeras .datos-square{
+        background-color: #2D2D2D;
+    border-color: transparent;
+    color: white;
+    top: 45px;
+    right: auto;
+    left: 3px;
+    height: 400px;
+    width: 700px;
+    font-size: 23px;
+    display: table;
+}
+
+
+.slide-palmeras>img{
+    float:right;
+        width: 592px !important;
+    margin-top: 135px;
+}
+
+/*************CLASES SOBREESCRITAS DESDE SECCION SLIDER*********************/
+
+#galeria-planos .owl-theme .owl-dots .owl-dot span{
+      background: black !important;
+}
+
+#galeria-planos .owl-theme .owl-dots .owl-dot.active {
+      background: transparent !important;
+      border-color:black;
+      animation: opacity_animation 1s;
+}
+
+
+
+
+
 
 
 /*---------------------------------------------*/
@@ -281,6 +503,16 @@ header .logo{
     height: 100px;
     position: relative;
     cursor:pointer;
+}
+
+
+.subtitle h3,{
+    font-family: raleway-b;
+    color:#2D2D2D;
+}
+
+.subtitle h3 span{
+    color:#6EC39A;
 }
 
 .servicios-list ul li img, .servicios-list ul li h3{
@@ -326,6 +558,11 @@ header .logo{
     right: 0;
     display: table;
     width: 100%;
+    font-family: raleway;
+}
+
+.servicios-list ul li .overlay p b{
+    font-family: raleway-b;
 }
 
 
@@ -362,8 +599,23 @@ header .logo{
 /*----------------------------------------------*/
 
 
-.form{
-    background-color: #2D2D2D;
+ .form{
+    background-color: rgba(0,0,0,0.99);
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+#contacto .row{
+        margin-right: 0;
+    margin-left: 0;
+}
+
+#contacto{
+    background-image: url(../img/galeria/2.jpg);
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
 }
 
 
@@ -374,12 +626,15 @@ header .logo{
   display:block;
   color:#6EC39A;
   margin-top: 12%;
+  z-index: 100;
+  padding-bottom: 5%;
 
 }
 
 .form form h1{
   font-family: raleway-b;
   font-size: 26px;
+    z-index: 1000000000000000000000000000000000;
 }
 
 .form form label,footer form input{
@@ -552,3 +807,80 @@ footer ul.right li:not(:first-child){
     }
 }
 
+
+
+
+/*---------------------------------------------*/
+                /*SALONES PAGINA*/
+/*----------------------------------------------*/
+
+
+.slider-salones .slogan{
+        width: 500px;
+}
+
+
+.slider-salones .slide{
+    height: 50vh;
+}
+
+
+.slider-salones .owl-dots {
+    margin-top: -239px !important;
+    float: right;
+    margin-right: 50px;
+}
+
+
+#salones-content {
+    font-family: raleway;
+}
+
+#salones-content .row{
+    padding:5%;
+}
+
+#salones-content p  {
+    margin-top: 5%;
+}
+
+#salones-content hr {
+    width: 50px;
+    height: 5px;
+    background: #6EC39A;
+    border:none;
+    margin:0;
+    margin-top: 10px;
+}
+
+#salones-content .subtitle {
+    padding:0;
+}
+
+
+#salones-content .square {
+
+  position: relative;
+    top: unset;
+    bottom: unset;
+    left: unset;
+    right: unset;
+    margin: 0;
+    height: auto;
+    width: 200px;
+    text-align: center;
+    border: 4px solid #6EC39A;
+    padding: 20px;
+    font-family: raleway-b;
+    color: black;
+
+}
+
+
+
+#salones-content .square p {
+
+    font-family: raleway;
+    font-size: 1.7rem;
+
+}

@@ -13,49 +13,19 @@
   	<meta name="keywords" content="">
 </head>
 <body>
-	<header>
-		<div class="row">
-			<div class="container">
-				<div class="col-md-5 hidden-sm hidden-xs ">
-					<img src="img/logo.png" class="logo" alt="">
-				</div>
-
-				<div class="col-md-7 hidden-sm hidden-xs btn-cont">
-					<ul>
-						<li><a href="">GALERÍA</a></li>
-						<li><a href="">SALONES</a></li>
-						<li><a href="">EVENTOS</a></li>
-						<li><a href="">CONTACTO</a></li>
-						<li>
-							<a href="">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-
-			</div>
-			<div class="hidden-lg hidden-md col-sm-12 col-xs-12 text-center xs-row " style="padding: 5%;">
-					<i class="fa fa-bars"  id="abrirMenu"></i>
-				</div>
-		</div>
-	</header>
-	<div class="semi-overlay">
-		<div class="slogan">
-			<h2>Un nuevo <span>espacio.</span> <br> Un nuevo <span>concepto.</span></h2>
-			<hr>
-		</div>
-	</div>
+	
+	<?php include("inc/header.php") ?>
+	
 	<div class="owl-one owl-carousel owl-theme slider" id="owl-1">
 		
 		<div>
 			<div class="slide" id="slide-1">
-				
+				<div class="semi-overlay">
+					<div class="slogan">
+						<h2>Un nuevo <span>espacio.</span> <br> Un nuevo <span>concepto.</span></h2>
+						<hr>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div>
@@ -67,7 +37,7 @@
 <section id="galeria">
 	<div class="row subtitle">
 		<div class="container">
-			<h2>GALERÍA</h2>
+			<h2><img src="img/iso-black.png" alt="">GALERÍA</h2>
 		</div>	
 	</div>
 
@@ -120,24 +90,29 @@
 
 	<div class="row subtitle">
 		<div class="container">
-			<h2>SALONES</h2>
+			<h2><img src="img/iso-black.png" alt="">SALONES</h2>
 		</div>	
 	</div>
 
 	<div class="row salones-home">
 		<div class="container-fluid">
-			<div class="col-md-6 col-sm-12" id="palmeras">
+			<a href="salones.php#palmeras" target="_blank">
+				<div class="col-md-6 col-sm-12 image-selector"  id="palmeras">
+					<div class="overlay"></div>
+					<div class="square text-center">
+						<h2>SALON <br> <span>PALMERAS</span></h2>
+					</div>
 
-				<div class="square text-center">
-					<h2>SALON <br> <span>PALMERAS</span></h2>
 				</div>
-
-			</div>
-			<div class="col-md-6 col-sm-12" id="laguna">
-				<div class="square text-center">
-					<h2>SALON <br> <span>LAGUNA</span></h2>
+			</a>
+			<a href="salones.php#laguna">
+				<div class="col-md-6 col-sm-12 image-selector"  id="laguna">
+					<div class="overlay"></div>
+					<div class="square text-center">
+						<h2>SALON <br> <span>LAGUNA</span></h2>
+					</div>
 				</div>
-			</div>
+			</a>
 		</div>
 	</div>
 
@@ -149,30 +124,56 @@
 
 	<div class="row subtitle">
 		<div class="container">
-			<h2>LOGO</h2>
+			<img src="img/logo-green-black.png" alt="" class="logo">
 		</div>	
 	</div>
 
-		<div class="owl-carousel galeria" id="owl-3">
-		<div>
-			<div class="slider">
+		<div class="owl-one owl-carousel owl-theme galeria" id="owl-3">
+			<div>
+				<div class="slide-cont">
+					<div class="datos-square">
+						<h5 class="green">SUPERFICIE</h5>
+						<h5 class="black">TOTAL DEL TERRENO</h5>
+						<p><i>31.716 m2</i></p>
+						<br>
+						<h5 class="green">SUPERFICIE</h5>
+						<h5 class="black">CONSTRUIDA</h5>
+						<p><i>3000 m2</i></p>
 
-				<div class="overlay"></div>
-				<img src="img/galeria/1.jpg" alt="">
+					</div>
+					<img src="img/slider/plano.png" alt=""  class="center-block">
+				</div>
 			</div>
-		</div>
-		<div>
-			<div class="slider">
-				<div class="overlay"></div>
-				<img src="img/galeria/2.jpg" alt="">
+			<div>
+
+				<img src="img/slider/plano-datos.png" alt="" style="width: 1100px;" class="center-block">
+				
 			</div>
-		</div>
-		<div>
-			<div class="slider">
-				<div class="overlay"></div>
-				<img src="img/galeria/3.jpg" alt="">
+			<div>
+				<div class="slide-cont slide-jardin">
+					<div class="datos-square">
+						<img src="img/iso.png" alt="" class="iso">
+						<br>
+							<p>Los  jardínes de <span>Darwin Tortugas</span> crean <br> un ambiente con impronta y personalidad. <br>
+							<span>El origen del parque es francés y <br> perteneció a la familia Duhau.</span></p>
+
+						</div>
+					<img src="img/slider/jardines.jpg" alt=""style="" class="center-block">
+				</div>
+
 			</div>
-		</div>
+			<div>
+				<div class="slide-cont slide-palmeras center-block">
+					<div class="datos-square">
+						<img src="img/iso.png" alt="" class="iso">
+						<br>
+							<p>Sus árboles destacados son las avenidas de <span>Platanos, los <br> Robles, Alcanfores y sus 6 Palmeras con más de 7 mts de <br> altura.</span> En el año 1982 se pudieron incorporar otras variedades de <br> árboles como Fresnos, Tipas, entre otros, que forman el parque <br> que podemos disfrutar hoy en día.</p> 
+
+						</div>
+					<img src="img/slider/palmeras.jpg" alt="" class="">
+				</div>
+
+			</div>
 	</div>
 </section>
 
@@ -182,7 +183,7 @@
 	<div class="row servicios-list">
 		<div class="container-fluid">
 			<ul class="center-block">
-				<li>
+				<li class="subtitle">
 					<h3>NUESTROS <br><span>SERVICIOS</span></h3>
 				</li>
 				<li>
@@ -240,92 +241,29 @@
 </section>
 
 
-<section id="contacto">
-
-	<div class="row form">
-		<form action="">
-	  			<h1 class="text-center">CONTACTANOS</h1>
-	  			<div class="row">
-	  				<div class="col-sm-12">
-	  					<input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre y Apellido">
-	  					<div class="error" id="nombre-error">Ingrese un nombre</div>
-	  				</div>
-	  			</div>
-	  			<div class="row">
-	  				<div class="col-sm-12">
-	  					<input type="text" class="form-control" name="email" id="email"placeholder="Mail">
-	  					<div class="error" id="email-error">Ingrese un email valido</div>
-	  				</div>
-	  			</div>
-	  			<div class="row">
-	  				<div class="col-sm-12">
-	  					<input type="text" class="form-control" name="telefono" id="telefono" placeholder="Tel de contacto">
-	  					<div class="error" id="telefono-error">Ingrese un telefono</div>		
-	  				</div>
-	  			</div>
-	  			<div class="row">
-	  				<div class="col-sm-6">
-	  					<select name="tipo-evento" id="tipo-evento" class="form-control form-small">
-			  				<option value="0">Elegir tipo de evento</option>
-			  				<option value="Social">Social</option>
-			  				<option value="Corporativo">Corporativo</option>
-	  					</select>		
-	  					<div class="error" id="tipo-evento-error">Ingrese un tipo de evento</div>
-	  				</div>
-	  				
-	  				<div class="col-sm-6">
-	  					<input type="date" class="form-control form-small" name="fecha" id="fecha" placeholder="Fecha">
-	  					<div class="error" id="fecha-error">Ingrese una fecha</div>		
-	  				</div>
-	  			</div>
-	  			<div class="row">
-	  				<div class="col-sm-12">
-	  					<input type="number" class="form-control" name="cantidad-invitados" id="cantidad-invitados" placeholder="Cantidad de invitados">
-						<div class="error" id="cantidad-invitados-error">Ingrese una cantidad de invitados</div>
-	  				</div>
-	  			</div>
-	  			
-	  			<div class="row">
-	  				<div class="col-sm-12">
-	  					<label for="comentarios">Comentarios:</label>
-	  					<textarea name="mensaje" id="mensaje" cols="30" rows="5" id="comentarios" class="form-control"></textarea>		
-	  				</div>
-	  			</div>
-
-	  			<div class="row">
-	  				<div class="col-sm-12">
-	  					
-	  					<a class="btn" onClick="validar()">ENVIAR</a>		
-	  				</div>
-	  			</div>
-	  		</form>
-	</div>
-
-</section>
-
-	<footer>
-	  	<div class="row">
-		  	<div class="container">
-				<ul class="flex left">
-					<li><img src="img/iso.png" alt="Darwin Tortugas"></li>
-					<li><a href="mailTo:info@darwintortugas.com?subject=DESDE%20SITIO%20WEB">info@darwintortugas.com &nbsp </a><p class="linea">|&nbsp </p><p>  +54 11 6695 8789</p></li>
-				</ul>
-			
-				<ul class="flex right">
-					<li><a href="https://www.instagram.com/darwin.tortugas/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-					<li class="safari_only"><a href="https://www.facebook.com/Darwin-Tortugas-333188340810073/" target="_blank"><i class="fab fa-facebook-f"></i> </a></li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-
+	<?php include("inc/contacto.php") ?>
 	
+	<?php include("inc/footer.php") ?>
 
-	<script type="text/javascript" src="js/JQuery.min.js"></script>
-	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>	  	
-	<script type="text/javascript" src="js/slider.js"></script>
+	<?php include("inc/scripts.php") ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
 	<script>
@@ -338,132 +276,8 @@
 		}
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkne1gpPfJ0B3KrE4OQURwPi492LDjg8g&callback=myMap"></script>
-
-
-
-
-
-
-
-
-
 	<script>
-		 function validar(){
-     
-    var mensaje = $("#mensaje").val();
-	var nombre = $("#nombre").val();
-	var telefono = $("#telefono").val();
-	var tipo_evento = $("#tipo-evento option:selected").val();
-	var fecha = $("#fecha").val();
-	var email = $("#email").val();
-	var cantidad_invitados = $("#cantidad-invitados").val();
-	var emailValido=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  	var soloNumeros=/^[0-9]*$/;
-
-  	var nombreEstaValidado=false;
-  	var emailEstaValidado=false;
-  	var telefonoEstaValidado=false;
-  	var tipoEventoEstaValidado=false;
-  	var fechaEstaValidado=false;
-  	var invitadosEstaValidado=false;
-
-	
-
-
-  	if(nombre.length==0){
-
-  		$("#nombre-error").fadeIn();
-  		nombreEstaValidado=false; 
-
-  	}else{
-		$("#nombre-error").fadeOut(); 
-		nombreEstaValidado=true; 		
-  	} 
-
-  	if(email.length==0||email.search(emailValido)){
-
-
-  		$("#email-error").fadeIn();
-  		emailEstaValidado=false;
-
-  	}else{
-		$("#email-error").fadeOut();  	
-		emailEstaValidado=true;	
-  	}
-
-
-  	if(telefono.length>13 || telefono.length==0 || telefono.search(soloNumeros)){
-
-  		$("#telefono-error").fadeIn();
-  		telefonoEstaValidado=false;
-
-  	}else{
-
-		$("#telefono-error").fadeOut();
-		telefonoEstaValidado=true;
-
-  	}
-
-  	if(tipo_evento==0){
-
-  		$("#tipo-evento-error").fadeIn();
-  		tipoEventoEstaValidado=false;
-
-  	}else{
-
-		$("#tipo-evento-error").fadeOut();
-		tipoEventoEstaValidado=true;
-
-  	}
-
-  	if(fecha==""){
-
-  		$("#fecha-error").fadeIn();
-  		fechaEstaValidado=false;
-
-  	}else{
-
-		$("#fecha-error").fadeOut();  
-		fechaEstaValidado=true;		
-  	}
-
-  	if(cantidad_invitados==0||cantidad_invitados==""){
-
-  		$("#cantidad-invitados-error").fadeIn();
-  		invitadosEstaValidado=false;
-
-  	}else{
-
-  		$("#cantidad-invitados-error").fadeOut();
-  		invitadosEstaValidado=true;
-  	}
-
-	
-
-  	if(nombreEstaValidado==true&&emailEstaValidado==true&&telefonoEstaValidado==true&&tipoEventoEstaValidado==true&&fechaEstaValidado==true&&invitadosEstaValidado==true){
-  		
-  		$( "body" ).prepend( '<div id="preloader"><div class="spinner-sm spinner-sm-1" id="status"> </div></div>' );
-
-  		$.ajax({
-    			data:{mensaje:mensaje,nombre:nombre,telefono:telefono,tipo_evento:tipo_evento,fecha:fecha,email:email},
-    			
-    			url:'ajax/enviarEmail.php',
-    
-    			type:'POST',
-    
-    			success:function(response){
-    
-				 	$("#preloader").fadeOut();
-                 	$('#myModal').modal('show')
-    
-    			}
-    	});
-
-
-  	}
-
-}
-
+		$(".bkground").height($("#contacto").height());
 	</script>
 </body>
 </html>
