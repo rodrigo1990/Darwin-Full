@@ -5,3 +5,4 @@
 	<script type="text/javascript" src="js/slider.js"></script>
 	<script type="text/javascript" src="js/validarFormulario.js"></script>
 	<script type="text/javascript" src="js/scrollFunctions.js"></script>
+	<script type="text/javascript" src="js/links.js"></script>

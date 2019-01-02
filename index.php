@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+
 	<title>Document</title>
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
@@ -37,7 +39,7 @@
 <section id="galeria">
 	<div class="row subtitle">
 		<div class="container">
-			<h2><img src="img/iso-black.png" alt="">GALERÍA</h2>
+			<h2><img src="img/iso-black.png" class="iso" alt="">GALERÍA</h2>
 		</div>	
 	</div>
 
@@ -90,7 +92,7 @@
 
 	<div class="row subtitle">
 		<div class="container">
-			<h2><img src="img/iso-black.png" alt="">SALONES</h2>
+			<h2><img src="img/iso-black.png" class="iso" alt="">SALONES</h2>
 		</div>	
 	</div>
 
@@ -128,53 +130,53 @@
 		</div>	
 	</div>
 
-		<div class="owl-one owl-carousel owl-theme galeria" id="owl-3">
-			<div>
-				<div class="slide-cont">
-					<div class="datos-square">
-						<h5 class="green">SUPERFICIE</h5>
-						<h5 class="black">TOTAL DEL TERRENO</h5>
-						<p><i>31.716 m2</i></p>
-						<br>
-						<h5 class="green">SUPERFICIE</h5>
-						<h5 class="black">CONSTRUIDA</h5>
-						<p><i>3000 m2</i></p>
+	<div class="owl-one owl-carousel owl-theme galeria" id="owl-3">
+		<div  id="slide-1">
+			<div class="slide-cont">
+				<div class="datos-square">
+					<h5 class="green">SUPERFICIE</h5>
+					<h5 class="black">TOTAL DEL TERRENO</h5>
+					<p><i>31.716 m2</i></p>
+					<br>
+					<h5 class="green">SUPERFICIE</h5>
+					<h5 class="black">CONSTRUIDA</h5>
+					<p><i>3000 m2</i></p>
+
+				</div>
+				<img src="img/slider/plano.png" alt=""  class="center-block">
+			</div>
+		</div>
+		<div id="slide-2">
+
+			<img src="img/slider/plano-datos.png" alt=""  class="center-block">
+			
+		</div>
+		<div id="slide-3">
+			<div class="slide-cont slide-jardin">
+				<div class="datos-square">
+					<img src="img/iso.png" alt="" class="iso">
+					<br>
+						<p>Los  jardínes de <span>Darwin Tortugas</span> crean <br> un ambiente con impronta y personalidad. <br>
+						<span>El origen del parque es francés y <br> perteneció a la familia Duhau.</span></p>
 
 					</div>
-					<img src="img/slider/plano.png" alt=""  class="center-block">
-				</div>
+				<img src="img/slider/jardines.jpg" alt=""style="" class="center-block">
 			</div>
-			<div>
 
-				<img src="img/slider/plano-datos.png" alt="" style="width: 1100px;" class="center-block">
-				
+		</div>
+		<div id="slide-4">
+			<div class="slide-cont slide-palmeras center-block">
+				<div class="datos-square">
+					<img src="img/iso.png" alt="" class="iso">
+					<br>
+						<p>Sus árboles destacados son las avenidas de <span>Platanos, los <br> Robles, Alcanfores y sus 6 Palmeras con más de 7 mts de <br> altura.</span> En el año 1982 se pudieron incorporar otras variedades de <br> árboles como Fresnos, Tipas, entre otros, que forman el parque <br> que podemos disfrutar hoy en día.</p> 
+
+					</div>
+				<img src="img/slider/palmeras.jpg" alt="" class="">
 			</div>
-			<div>
-				<div class="slide-cont slide-jardin">
-					<div class="datos-square">
-						<img src="img/iso.png" alt="" class="iso">
-						<br>
-							<p>Los  jardínes de <span>Darwin Tortugas</span> crean <br> un ambiente con impronta y personalidad. <br>
-							<span>El origen del parque es francés y <br> perteneció a la familia Duhau.</span></p>
 
-						</div>
-					<img src="img/slider/jardines.jpg" alt=""style="" class="center-block">
-				</div>
-
-			</div>
-			<div>
-				<div class="slide-cont slide-palmeras center-block">
-					<div class="datos-square">
-						<img src="img/iso.png" alt="" class="iso">
-						<br>
-							<p>Sus árboles destacados son las avenidas de <span>Platanos, los <br> Robles, Alcanfores y sus 6 Palmeras con más de 7 mts de <br> altura.</span> En el año 1982 se pudieron incorporar otras variedades de <br> árboles como Fresnos, Tipas, entre otros, que forman el parque <br> que podemos disfrutar hoy en día.</p> 
-
-						</div>
-					<img src="img/slider/palmeras.jpg" alt="" class="">
-				</div>
-
-			</div>
-	</div>
+		</div>
+</div>
 </section>
 
 
@@ -182,6 +184,9 @@
 
 	<div class="row servicios-list">
 		<div class="container-fluid">
+			<div class="subtitle subtitle-xs center-block">
+					<h3>NUESTROS <br><span>SERVICIOS</span></h3>
+				</div>
 			<ul class="center-block">
 				<li class="subtitle">
 					<h3>NUESTROS <br><span>SERVICIOS</span></h3>

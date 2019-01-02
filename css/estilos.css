@@ -24,7 +24,7 @@ body{
     font-family: raleway-b;
 }
 
-.subtitle img{
+.iso{
    width: 58px;
     vertical-align: text-top;
 }
@@ -59,7 +59,30 @@ section#servicios{
     width: 50px !important;
 }
 
+.slider-middle .slogan{
+        width: 600px;
+}
 
+
+.slider-middle .slide{
+        height: 66vh;
+}
+
+
+.slider-middle .owl-dots {
+    margin-top: -239px !important;
+    float: right;
+    margin-right: 50px;
+}
+
+p{
+    font-family: raleway;
+}
+
+
+p>b{
+    font-family: raleway-b;
+}
 /*---------------------------------------------*/
                 /*HEADER*/
 /*----------------------------------------------*/
@@ -140,12 +163,12 @@ header ul li a i {
     background-size: cover;
 }
 
-#slide-1{
+#owl-1 #slide-1{
 	background-image:url(../img/slider/slide-1.jpg);
 }
 
 
-#slide-2{
+#owl-1 #slide-2{
 	background-image:url(../img/slider/slide-2.jpg);
 }
 
@@ -318,13 +341,15 @@ header ul li a i {
 
 .salones-home #palmeras{
     background: url(../img/salones-home/palmeras.jpg);
-    background-position: -472px -390px;
     height: 444px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .salones-home #laguna{
-    background: url(../img/salones-home/laguna.jpg);
-    background-position: -306px -376px;
+    background: url(../img/salones-home/laguna2.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
     height: 444px;
 }
 
@@ -337,12 +362,13 @@ header ul li a i {
     right: 0;
     margin: auto;
     height: 148px;
-    width: 200px;
+    width: 220px;
     text-align: center;
     border: 4px solid white;
     padding: 20px;
     font-family: raleway-b;
-    color:white;
+    color: white;
+    letter-spacing: 3px;
 }
 
 .square h2 span{
@@ -375,6 +401,26 @@ header ul li a i {
     transition-delay: 0s;
     opacity: 0.8;   
 }
+
+
+ #owl-4 #slide-1{
+    background-image:url(../img/salones-home/palmeras.jpg);
+    background-position-y: -250px;
+}
+
+ #owl-4 #slide-2{
+    background-image:url(../img/slider/slide-2.jpg);
+    background-position-y: -250px;
+}
+
+#owl-5 #slide-2{
+    background-image:url(../img/slider/slide-2.jpg);
+    background-position-y: -155px;
+
+
+}
+
+
 
 
 
@@ -433,6 +479,7 @@ header ul li a i {
 }
 
 
+
 .slide-jardin>img{
     margin-top: 100px;
     width: 900px !important;
@@ -461,6 +508,12 @@ header ul li a i {
     float:right;
         width: 592px !important;
     margin-top: 135px;
+}
+
+
+
+#owl-3 #slide-2 img{
+    width: 1100px;
 }
 
 /*************CLASES SOBREESCRITAS DESDE SECCION SLIDER*********************/
@@ -525,6 +578,7 @@ header ul li a i {
     text-align: left;
     display: table;
     z-index: 0;
+        letter-spacing: 3px;
 }
 
 
@@ -580,7 +634,9 @@ header ul li a i {
 }
 
 
-
+#servicios .subtitle-xs{
+    display:none;
+}
 
 /*---------------------------------------------*/
                 /*MAP*/
@@ -635,6 +691,7 @@ header ul li a i {
   font-family: raleway-b;
   font-size: 26px;
     z-index: 1000000000000000000000000000000000;
+    letter-spacing: 3px;
 }
 
 .form form label,footer form input{
@@ -815,26 +872,8 @@ footer ul.right li:not(:first-child){
 /*----------------------------------------------*/
 
 
-.slider-salones .slogan{
-        width: 500px;
-}
 
 
-.slider-salones .slide{
-    height: 50vh;
-}
-
-
-.slider-salones .owl-dots {
-    margin-top: -239px !important;
-    float: right;
-    margin-right: 50px;
-}
-
-
-#salones-content {
-    font-family: raleway;
-}
 
 #salones-content .row{
     padding:5%;
@@ -855,6 +894,7 @@ footer ul.right li:not(:first-child){
 
 #salones-content .subtitle {
     padding:0;
+    letter-spacing: 3px;
 }
 
 
@@ -873,6 +913,7 @@ footer ul.right li:not(:first-child){
     padding: 20px;
     font-family: raleway-b;
     color: black;
+    letter-spacing: initial;
 
 }
 
@@ -884,3 +925,384 @@ footer ul.right li:not(:first-child){
     font-size: 1.7rem;
 
 }
+
+
+
+/*---------------------------------------------*/
+                /*EVENTOS PAGINA*/
+/*----------------------------------------------*/
+
+#owl-6 #slide-1{
+    background-image: url("../img/static-img/eventos-section.jpg");
+}
+
+
+.subtitle-square{
+    padding:10px;
+    border:4px solid #6EC39A ;
+    width: 70%;
+}
+
+.subtitle-square h2{
+    text-align: center;
+    font-family: raleway-b;
+    color:#2D2D2D;
+    line-height: 36px;
+}
+
+
+.subtitle-square h2 span{
+    color:#6EC39A;
+}
+
+
+#eventos-content .text-row{
+    padding: 30px 30px 6px 30px;
+}
+
+
+
+.row .bkground{
+    background-image: url("../img/static-img/1.jpg");
+}
+
+
+.salon-selector{
+    width: 60%;
+    height: 82px;
+    margin-top:25%;
+}
+
+
+.salon-selector .salon-select{
+    width: 50%;
+    padding: 12px;
+    float: left;
+    text-align: center;
+
+}
+
+
+.salon-selector .salon-select:nth-child(1){
+    background-color: #2D2D2D;
+}
+
+
+.salon-selector .salon-select:nth-child(2){
+    background-color: rgba(45,45,45,0.15);
+
+}
+
+.salon-selector .salon-select h4{
+    font-family: raleway-b;
+}
+
+
+.salon-selector .salon-select h4.black{
+    color:#2D2D2D;
+}
+
+
+.salon-selector .salon-select h4.white{
+    color:white;
+}
+
+
+.salon-selector .salon-select h4 span{
+    color:#6EC39A;
+}
+
+#eventos-content .container-fluid .col-md-6{
+    padding:0;
+}
+
+.text-row p {
+        margin-top: 18px;
+}
+
+
+#eventos-content .content{
+    margin-top: 185px;
+}
+
+
+#eventos-content .square{
+    top: -116%;
+    left: 77%;
+    height: 148px;
+    width: 600px;
+    text-align: left;
+    border: 4px solid #6EC39A;
+    color:black;
+        letter-spacing: 0;
+
+}
+
+#eventos-content .square h4{
+    line-height: 21px;
+    letter-spacing: 2px;
+}
+
+
+#eventos-content .square h4 span{
+    color:#6EC39A;
+}
+
+#eventos-content #eventos-corp{
+       left: -123%;
+    top: -122%;
+}
+
+
+#eventos-content .square-xs{
+    display:none;
+}
+
+/*---------------------------------------------*/
+                /*MEDIA QUERYS*/
+/*----------------------------------------------*/
+
+
+@media only screen and (min-width: 10px) and (max-width: 850px) {
+
+    .slogan h2 {
+        font-size: 227%;
+    }
+
+    .slogan hr {
+    margin: auto;
+    }
+
+
+    .owl-theme .owl-dots .owl-dot {
+    display: unset !important;
+    }
+
+    .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: -102px;
+    }
+    
+
+    .xs-row i {
+    font-size: 5rem;
+    }
+
+
+    #owl-3{
+        display:none;
+    }
+    
+
+    #galeria-planos .subtitle{
+        display:none;
+    }
+    
+
+    .servicios-list ul .subtitle {
+        display: none;
+    }
+
+    #servicios .subtitle-xs{
+        display: block;
+        width: 131px;
+    }
+
+
+    #owl-4 #slide-1 {
+    background-position-y: unset;
+    }
+
+
+    .slider-middle .slogan {
+    width: 77%;
+    }
+
+
+
+footer ul.right li:not(:first-child) {
+    margin-left: 0;
+}
+footer ul.right li:not(:first-child) {
+    margin-left: 0;
+}
+  footer ul.right li:not(:first-child) {
+    margin-left: 0;
+  }
+.flex{
+
+    flex-direction:column !important; 
+
+}
+    footer ul.right,footer ul.left{
+    float:none !important;
+}
+
+footer ul {
+     width: auto !important; 
+     height: auto !important; 
+     margin:0 !important;
+}
+footer {
+    height: 100%;
+  
+}
+
+footer ul li{
+    text-align: center !important;
+}
+footer ul li a, footer ul li p {
+    float: none !important;
+    margin: 0 !important;
+}
+    footer ul.right,footer ul.left{
+        float:none !important;
+    }
+
+    footer ul {
+         width: auto !important; 
+         height: auto !important; 
+         margin:0 !important;
+    }
+
+    footer {
+        height: 100%;
+      
+    }
+
+    footer ul li{
+        text-align: center !important;
+        margin-top: 10px;
+    }
+    footer ul li a, footer ul li p {
+        float: none !important;
+        margin: 0 !important;
+    }
+    footer .linea{
+        display:none;
+    }
+
+
+    .slider-middle .owl-dots {
+    margin-top: -102px !important;
+    }
+
+    #owl-5 #slide-2 {
+    background-position-y: unset;
+    }
+
+
+    .subtitle {
+    padding-top: 20%;
+    padding-bottom: 18%;
+    }
+
+
+
+    #salones-content .square {
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    #salones-content hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    #salones-content .subtitle {
+    text-align: center;
+    }
+
+
+    #eventos-content .square {
+    top: 0;
+    left: 0;
+    height: 148px;
+    width: 220px;
+    text-align: center;
+    border: 4px solid #6EC39A;
+    color: white;
+    letter-spacing: 0;
+    }
+
+
+    #eventos-content .content {
+        margin-top: auto;
+    }
+
+    #eventos-content #eventos-corp {
+        left: 0; 
+        top: 0;
+    }
+
+
+    .salon-selector {
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .subtitle-square {
+    width: 100%;
+        margin-bottom: 33px;
+    }
+
+    .slider-middle .slogan {
+    width: 48%;
+    text-align: center;
+    }
+
+    .slogan hr {
+    float: unset;
+    }
+
+    #eventos-content .iso{
+        margin-left:auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 32px;
+    }
+
+    #eventos-content p{
+        text-align: center;
+    }
+
+
+    .salon-selector {
+    width: 86%;
+    }
+
+    
+    #eventos-content .square{
+        display:none;
+    }
+
+   #eventos-content .square-xs {
+    display: block;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) and (orientation:portrait) {
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 850px) and (orientation:landscape) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+ 
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+
+   
+}
+
+
+

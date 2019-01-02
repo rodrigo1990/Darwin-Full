@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
 	<title>Document</title>
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
@@ -16,7 +17,7 @@
 	<?php include("inc/header.php") ?>
 	<section id="salones-content">
 		<section id="palmeras">
-			<div class="owl-one owl-carousel owl-theme slider slider-salones" id="owl-4">
+			<div class="owl-one owl-carousel owl-theme slider slider-middle" id="owl-4">
 				
 				<div>
 					<div class="slide" id="slide-1">
@@ -61,7 +62,7 @@
 
 		<section id="laguna">
 
-			<div class="owl-one owl-carousel owl-theme slider slider-salones" id="owl-5">
+			<div class="owl-one owl-carousel owl-theme slider slider-middle" id="owl-5">
 				
 				<div>
 					<div class="slide" id="slide-2">

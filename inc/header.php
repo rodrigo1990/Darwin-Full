@@ -2,15 +2,17 @@
 		<div class="row">
 			<div class="container">
 				<div class="col-md-5 hidden-sm hidden-xs ">
-					<img src="img/logo-black.png" class="logo" alt="">
+					<a href="index.php">
+						<img src="img/logo-black.png" class="logo" alt="">
+					</a>
 				</div>
 
 				<div class="col-md-7 hidden-sm hidden-xs btn-cont">
 					<ul>
-						<li><a href="">GALERÍA</a></li>
-						<li><a href="salones.php" target="_blank">SALONES</a></li>
-						<li><a href="">EVENTOS</a></li>
-						<li><a href="">CONTACTO</a></li>
+						<li><a href="" id="link-gal">GALERÍA</a></li>
+						<li><a href="salones.php">SALONES</a></li>
+						<li><a href="eventos.php">EVENTOS</a></li>
+						<li><a href="#contacto">CONTACTO</a></li>
 						<li>
 							<a href="">
 								<i class="fab fa-instagram"></i>
