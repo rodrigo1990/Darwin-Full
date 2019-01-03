@@ -1,115 +1,115 @@
- function validar(){
+  function validar(){
      
     var mensaje = $("#mensaje").val();
-	var nombre = $("#nombre").val();
-	var telefono = $("#telefono").val();
-	var tipo_evento = $("#tipo-evento option:selected").val();
-	var fecha = $("#fecha").val();
-	var email = $("#email").val();
-	var cantidad_invitados = $("#cantidad-invitados").val();
-	var emailValido=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  	var soloNumeros=/^[0-9]*$/;
+  var nombre = $("#nombre").val();
+  var telefono = $("#telefono").val();
+  var tipo_evento = $("#tipo-evento option:selected").val();
+  var fecha = $("#fecha").val();
+  var email = $("#email").val();
+  var cantidad_invitados = $("#cantidad-invitados").val();
+  var emailValido=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var soloNumeros=/^[0-9]*$/;
 
-  	var nombreEstaValidado=false;
-  	var emailEstaValidado=false;
-  	var telefonoEstaValidado=false;
-  	var tipoEventoEstaValidado=false;
-  	var fechaEstaValidado=false;
-  	var invitadosEstaValidado=false;
+    var nombreEstaValidado=false;
+    var emailEstaValidado=false;
+    var telefonoEstaValidado=false;
+    var tipoEventoEstaValidado=false;
+    var fechaEstaValidado=false;
+    var invitadosEstaValidado=false;
 
-	
-
-
-  	if(nombre.length==0){
-
-  		$("#nombre-error").fadeIn();
-  		nombreEstaValidado=false; 
-
-  	}else{
-		$("#nombre-error").fadeOut(); 
-		nombreEstaValidado=true; 		
-  	} 
-
-  	if(email.length==0||email.search(emailValido)){
+  
 
 
-  		$("#email-error").fadeIn();
-  		emailEstaValidado=false;
+    if(nombre.length==0){
 
-  	}else{
-		$("#email-error").fadeOut();  	
-		emailEstaValidado=true;	
-  	}
+      $("#nombre-error").fadeIn();
+      nombreEstaValidado=false; 
+
+    }else{
+    $("#nombre-error").fadeOut(); 
+    nombreEstaValidado=true;    
+    } 
+
+    if(email.length==0||email.search(emailValido)){
 
 
-  	if(telefono.length>13 || telefono.length==0 || telefono.search(soloNumeros)){
+      $("#email-error").fadeIn();
+      emailEstaValidado=false;
 
-  		$("#telefono-error").fadeIn();
-  		telefonoEstaValidado=false;
+    }else{
+    $("#email-error").fadeOut();    
+    emailEstaValidado=true; 
+    }
 
-  	}else{
 
-		$("#telefono-error").fadeOut();
-		telefonoEstaValidado=true;
+    if(telefono.length>13 || telefono.length==0 || telefono.search(soloNumeros)){
 
-  	}
+      $("#telefono-error").fadeIn();
+      telefonoEstaValidado=false;
 
-  	if(tipo_evento==0){
+    }else{
 
-  		$("#tipo-evento-error").fadeIn();
-  		tipoEventoEstaValidado=false;
+    $("#telefono-error").fadeOut();
+    telefonoEstaValidado=true;
 
-  	}else{
+    }
 
-		$("#tipo-evento-error").fadeOut();
-		tipoEventoEstaValidado=true;
+    if(tipo_evento==0){
 
-  	}
+      $("#tipo-evento-error").fadeIn();
+      tipoEventoEstaValidado=false;
 
-  	if(fecha==""){
+    }else{
 
-  		$("#fecha-error").fadeIn();
-  		fechaEstaValidado=false;
+    $("#tipo-evento-error").fadeOut();
+    tipoEventoEstaValidado=true;
 
-  	}else{
+    }
 
-		$("#fecha-error").fadeOut();  
-		fechaEstaValidado=true;		
-  	}
+    if(fecha==""){
 
-  	if(cantidad_invitados==0||cantidad_invitados==""){
+      $("#fecha-error").fadeIn();
+      fechaEstaValidado=false;
 
-  		$("#cantidad-invitados-error").fadeIn();
-  		invitadosEstaValidado=false;
+    }else{
 
-  	}else{
+    $("#fecha-error").fadeOut();  
+    fechaEstaValidado=true;   
+    }
 
-  		$("#cantidad-invitados-error").fadeOut();
-  		invitadosEstaValidado=true;
-  	}
+    if(cantidad_invitados==0||cantidad_invitados==""){
 
-	
+      $("#cantidad-invitados-error").fadeIn();
+      invitadosEstaValidado=false;
 
-  	if(nombreEstaValidado==true&&emailEstaValidado==true&&telefonoEstaValidado==true&&tipoEventoEstaValidado==true&&fechaEstaValidado==true&&invitadosEstaValidado==true){
-  		
-  		$( "body" ).prepend( '<div id="preloader"><div class="spinner-sm spinner-sm-1" id="status"> </div></div>' );
+    }else{
 
-  		$.ajax({
-    			data:{mensaje:mensaje,nombre:nombre,telefono:telefono,tipo_evento:tipo_evento,fecha:fecha,email:email},
-    			
-    			url:'ajax/enviarEmail.php',
+      $("#cantidad-invitados-error").fadeOut();
+      invitadosEstaValidado=true;
+    }
+
+  
+
+    if(nombreEstaValidado==true&&emailEstaValidado==true&&telefonoEstaValidado==true&&tipoEventoEstaValidado==true&&fechaEstaValidado==true&&invitadosEstaValidado==true){
+      
+      $( "body" ).prepend( '<div id="preloader"><div class="spinner-sm spinner-sm-1" id="status"> </div></div>' );
+
+      $.ajax({
+          data:{mensaje:mensaje,nombre:nombre,telefono:telefono,tipo_evento:tipo_evento,fecha:fecha,email:email,cantidad_invitados:cantidad_invitados},
+          
+          url:'ajax/enviarEmail.php',
     
-    			type:'POST',
+          type:'POST',
     
-    			success:function(response){
+          success:function(response){
     
-				 	$("#preloader").fadeOut();
-                 	$('#myModal').modal('show')
+          $("#preloader").fadeOut();
+                  $('#myModal').modal('show')
     
-    			}
-    	});
+          }
+      });
 
 
-  	}
+    }
 
 }

@@ -39,7 +39,7 @@
 
   $('#owl-3').owlCarousel({
     loop:true,
-    margin:0,
+    margin:300,
     autoplay:false,
     autoplayTimeout:4000,
     nav:false,

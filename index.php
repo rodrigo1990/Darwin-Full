@@ -49,7 +49,7 @@
 			<div class="slider">
 				<div class="overlay">
 					<div class="search-cont">
-						<a class="content" data-fancybox href="img/galeria/1.jpg" data-caption="Descripcion" >
+						<a class="content" data-fancybox href="img/galeria/1.jpg" data-caption="" >
 							<i class="fas fa-search"></i>
 						</a>
 					</div>
@@ -62,7 +62,7 @@
 			<div class="slider">
 				<div class="overlay">
 					<div class="search-cont">
-			            <a class="content" data-fancybox href="img/galeria/2.jpg" data-caption="Descripcion" >
+			            <a class="content" data-fancybox href="img/galeria/2.jpg" data-caption="" >
 							<i class="fas fa-search"></i>
 						</a>
 					</div>
@@ -75,7 +75,7 @@
 			<div class="slider">
 				<div class="overlay">
 					<div class="search-cont">
-						<a class="content" data-fancybox href="img/galeria/3.jpg" data-caption="Descripcion" >
+						<a class="content" data-fancybox href="img/galeria/3.jpg" data-caption="" >
 							<i class="fas fa-search"></i>
 						</a>
 					</div>
@@ -83,6 +83,8 @@
 				<img src="img/galeria/3.jpg" alt="">
 			</div>
 		</div>
+
+		
 
 	</div>
 </section>
@@ -98,11 +100,11 @@
 
 	<div class="row salones-home">
 		<div class="container-fluid">
-			<a href="salones.php#palmeras" target="_blank">
+			<a href="salones.php#palmeras">
 				<div class="col-md-6 col-sm-12 image-selector"  id="palmeras">
 					<div class="overlay"></div>
 					<div class="square text-center">
-						<h2>SALON <br> <span>PALMERAS</span></h2>
+						<h2>SALÓN <br> <span>PALMERAS</span></h2>
 					</div>
 
 				</div>
@@ -111,7 +113,7 @@
 				<div class="col-md-6 col-sm-12 image-selector"  id="laguna">
 					<div class="overlay"></div>
 					<div class="square text-center">
-						<h2>SALON <br> <span>LAGUNA</span></h2>
+						<h2>SALÓN <br> <span>LAGUNA</span></h2>
 					</div>
 				</div>
 			</a>
@@ -130,7 +132,7 @@
 		</div>	
 	</div>
 
-	<div class="owl-one owl-carousel owl-theme galeria" id="owl-3">
+	<!--  <div class="owl-one owl-carousel owl-theme galeria" id="owl-3">
 		<div  id="slide-1">
 			<div class="slide-cont">
 				<div class="datos-square">
@@ -176,6 +178,22 @@
 			</div>
 
 		</div>
+</div>-->
+
+<div class="owl-one owl-carousel owl-theme galeria" id="owl-3">
+		<div>
+			<img src="img/slider-prueba/1.png" alt=""  >
+		</div>
+		<div>
+			<img src="img/slider-prueba/2.png" alt=""  >
+		</div>
+		<div>
+			<img src="img/slider-prueba/3.png" alt=""  >
+		</div>
+		<div>
+			<img src="img/slider-prueba/4.png" alt=""  >
+		</div>
+
 </div>
 </section>
 
@@ -273,12 +291,62 @@
 
 	<script>
 		function myMap() {
-		var mapProp= {
-		  center:new google.maps.LatLng(51.508742,-0.120850),
-		  zoom:5,
-		};
-		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
+
+		var mapOptions = {
+	        center: new google.maps.LatLng(-34.477751, -58.519464),
+	        zoom: 15,
+	        mapTypeId: google.maps.MapTypeId.HYBRID,
+	        mapTypeId: 'roadmap'
+	  	}
+
+
+
+
+	 	var bounds = new google.maps.LatLngBounds();
+
+
+
+
+		var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+
+		var infowindow = new google.maps.InfoWindow({
+		    content: "<span>Estudio Darwin <br><br>  <b><i>Avenida Bernabé Márquez 504, San Isidro, Buenos Aires</i></b></span>"
+		});
+
+
+
+		 var position = new google.maps.LatLng(-34.477751, -58.519464);
+
+
+
+		 	bounds.extend(position);
+
+
+
+			marker = new google.maps.Marker({
+            position: position,
+            map: map,
+		  	 icon:"img/iso-black-10.png"
+        });
+        
+
+
+
+
+
+
+        google.maps.event.addListener(marker, 'click', (function() {
+            return function() {
+                infowindow.open(map, marker);
+            }
+        })());
+
 		}
+
+
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkne1gpPfJ0B3KrE4OQURwPi492LDjg8g&callback=myMap"></script>
 	<script>

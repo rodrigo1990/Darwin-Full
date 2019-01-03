@@ -69,8 +69,12 @@
 					<div class="col-md-6">
 						
 						<div class="salon-selector center-block">
-							<div class="salon-select"><h4 class="white">SALÓN <br><span> PALMERAS</span></h4></div>
-							<div class="salon-select"><h4 class="black">SALÓN <br> <span> LAGUNA</span></h4></div>
+							<a href="salones.php#palmeras">
+								<div class="salon-select black"><h4 class="white">SALÓN <br><span> PALMERAS</span></h4></div>
+							</a>
+							<a href="salones.php#laguna">
+								<div class="salon-select white"><h4 class="black">SALÓN <br> <span> LAGUNA</span></h4></div>
+							</a>
 						</div>
 
 					
@@ -85,9 +89,14 @@
 				<div class="container-fluid">
 					<div class="col-md-6 hidden-xs hidden-sm">
 						<div class="salon-selector center-block">
-							<div class="salon-select"><h4 class="white">SALÓN <br><span> PALMERAS</span></h4></div>
-							<div class="salon-select"><h4 class="black">SALÓN <br> <span> LAGUNA</span></h4></div>
+							<a href="salones.php#palmeras">
+								<div class="salon-select black"><h4 class="white">SALÓN <br><span> PALMERAS</span></h4></div>
+							</a>
+							<a href="salones.php#laguna">
+								<div class="salon-select white"><h4 class="black">SALÓN <br> <span> LAGUNA</span></h4></div>
+							</a>
 						</div>
+
 					</div>
 					<div class="col-md-6">
 						

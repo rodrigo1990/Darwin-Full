@@ -3,7 +3,7 @@
 		  	<div class="container">
 				<ul class="flex left">
 					<li><img src="img/iso.png" alt="Darwin Tortugas"></li>
-					<li><a href="mailTo:info@darwintortugas.com?subject=DESDE%20SITIO%20WEB">info@darwintortugas.com &nbsp </a><p class="linea">|&nbsp </p><p>  +54 11 6695 8789</p></li>
+					<li><a href="mailTo:tortugas@estudiodarwin.com.ar?subject=DESDE%20SITIO%20WEB">tortugas@estudiodarwin.com.ar &nbsp </a><p class="linea">|&nbsp </p><p>  +54 11 6695 8789</p></li>
 				</ul>
 			
 				<ul class="flex right">

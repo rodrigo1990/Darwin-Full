@@ -88,7 +88,7 @@ p>b{
 /*----------------------------------------------*/
 
 header{
-    padding:1%;
+    padding: 1.5% 1% 1.5% 1%;
     position:fixed;
     top:0;
     z-index: 3;
@@ -101,6 +101,7 @@ header ul {
 	list-style: none;
 	float:right;
     margin-top: 13px;
+    padding: 0;
 }
 
 header ul li {
@@ -109,13 +110,14 @@ header ul li {
 
 
 header ul li:not(:first-child){
-	margin-left:15px;
+	margin-left:25px;
 }
 
 
 header ul li a {
     color:white;
     transition:color 0.5s;
+    letter-spacing: 5px;
 }
 
 header ul li a:hover{
@@ -126,6 +128,12 @@ header ul li a:hover{
 
 header ul li a i {
     color:white;
+    transition: color 0.5s;
+}
+
+header ul li a i:hover{
+    color:#6EC39A;
+    transition: color 0.5s;
 }
 
 
@@ -143,7 +151,7 @@ header ul li a i {
 .xs-row i{
     float:right;
     font-size: 13rem;
-    color:white;
+    color:#6EC39A;
 }
 
 
@@ -151,6 +159,64 @@ header ul li a i {
     height: 48.875px;
 }
 
+
+.overlay-xs-menu {
+    width: 100vw;
+    height: 0;
+    position: fixed;
+    z-index: 50000;
+    display: block;
+        background-color: rgba(45,45,45,0.9);
+    animation: openMenu 0.9s cubic-bezier(.19,1,.22,1) forwards;
+    padding-left: 0;
+    text-align: center;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.overlay-xs-menu li {
+    margin-top: 14%;
+}
+
+
+.overlay-xs-menu .left {
+    float:left;
+        margin-left: 16px;
+}
+
+.overlay-xs-menu li a.xs-btn {
+    font-size: 2.3rem;
+    color: #6EC39A;
+}
+
+.overlay-xs-menu .center-block{
+    width: 87px;
+}
+
+@keyframes openMenu{
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+
+.addBkground{
+    background:rgba(45,45,45,0.70);
+    transition:background 0.5s;
+}
+
+.removeBkground{
+    background:transparent;
+    transition:background 0.5s;
+}
+
+    
 /*---------------------------------------------*/
                 /*SLIDER*/
 /*----------------------------------------------*/
@@ -199,6 +265,25 @@ header ul li a i {
 
 }
 
+
+@-moz-document url-prefix() {
+  .slogan{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 38%;
+    margin: auto;
+    display: table;
+    overflow:auto; 
+    /*height: 100px;*/
+    width: 552px;
+    color:white;
+    font-family: raleway-m;
+
+}
+}
+
 .slogan hr{
     background-color: #6EC39A;
     height: 3px;
@@ -206,11 +291,11 @@ header ul li a i {
     float: left;
     border:none;
     /* margin-left: -143px; */
-    margin: 0 0 0 -54px;
+    margin: 0 0 0 -29px
 }
 
 .slogan {
-    width: 77%;
+    width: 87%;
     text-align: left;
 }
 
@@ -222,8 +307,17 @@ header ul li a i {
 
 
 .slogan h2{
-    font-size: 410%;
+    font-size: 320%;
+    letter-spacing: 3px;
 }
+
+
+@-moz-document url-prefix() {
+ .slogan h2{
+    font-size: 5rem;
+}
+}
+
 
 .slogan h2 span{
     font-family: raleway-b; 
@@ -327,6 +421,24 @@ header ul li a i {
 }
 
 
+
+
+@-moz-document url-prefix() {
+  .galeria .slider .overlay .search-cont {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    bottom: 0;
+    margin: auto;
+    display: table;
+    width: 50px;
+
+}
+}
+
+
 .galeria .slider .overlay .fa-search{
     color:white;
     border:2px solid #6EC39A;
@@ -386,7 +498,7 @@ header ul li a i {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    opacity: 0;
+    opacity: 0.14;
     -webkit-transition: 0.2s opacity;
     transition: 0.2s opacity;
     -webkit-transition-delay: 0.2s;
@@ -409,7 +521,7 @@ header ul li a i {
 }
 
  #owl-4 #slide-2{
-    background-image:url(../img/slider/slide-2.jpg);
+    background-image:url(../img/salones-home/laguna.jpg);
     background-position-y: -250px;
 }
 
@@ -430,7 +542,7 @@ header ul li a i {
                 /*GALERIA PLANOS*/
 /*----------------------------------------------*/
 
-.slide-cont{
+/*.slide-cont{
     position:relative;
 }
 
@@ -473,7 +585,7 @@ header ul li a i {
 
 
 .slide-jardin{
-        width: 1403px;
+        width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -486,7 +598,7 @@ header ul li a i {
 }
 
 .slide-palmeras{
-    width:1228px;
+       width: 68%;
 }
 
 
@@ -494,27 +606,40 @@ header ul li a i {
         background-color: #2D2D2D;
     border-color: transparent;
     color: white;
-    top: 45px;
+    top: -23%;
     right: auto;
     left: 3px;
-    height: 400px;
-    width: 700px;
-    font-size: 23px;
+    height: 267px;
+    width: 54%;
+    font-size: 1.8rem;
     display: table;
 }
 
 
 .slide-palmeras>img{
-    float:right;
-        width: 592px !important;
-    margin-top: 135px;
+        /* float: right; */
+        /*margin-left: 43%;
+    width: 65% !important;
+    margin-top: 111px;
 }
 
 
 
 #owl-3 #slide-2 img{
-    width: 1100px;
+    width: 73%;
+}*/
+
+
+#owl-3 img {
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
+
+
+
 
 /*************CLASES SOBREESCRITAS DESDE SECCION SLIDER*********************/
 
@@ -979,20 +1104,33 @@ footer ul.right li:not(:first-child){
     padding: 12px;
     float: left;
     text-align: center;
+    cursor:pointer;
 
 }
 
 
-.salon-selector .salon-select:nth-child(1){
+.salon-selector  div.black{
     background-color: #2D2D2D;
 }
 
 
-.salon-selector .salon-select:nth-child(2){
+.salon-selector  div.black:hover{
+    background-color: #4e4d4d;
+}
+
+
+.salon-selector  div.white{
     background-color: rgba(45,45,45,0.15);
 
 }
 
+
+
+.salon-selector  div.white:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+
+}
+    
 .salon-selector .salon-select h4{
     font-family: raleway-b;
 }
@@ -1280,6 +1418,42 @@ footer ul li a, footer ul li p {
    #eventos-content .square-xs {
     display: block;
 }
+
+
+    form{
+        width: 100% !important;
+    }
+
+    .square-xs h4{
+        text-align: center;
+    }
+
+
+    #owl-4 #slide-2 {
+    background-position-y: unset;
+    }
+
+
+    .form .btn {
+    float: unset;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+
+
+
+
+
+    .row {
+    margin-right: unset;
+    margin-left: unset;
+    }
+
+
+    .addBkground{
+    background:transparent;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) and (orientation:portrait) {
@@ -1287,22 +1461,38 @@ footer ul li a, footer ul li p {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 850px) and (orientation:landscape) {
+    .overlay-xs-menu li {
+    margin-top: 5%;
+    }
 
+    #owl-3{
+        display:block;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+@media only screen and (min-width: 1000px) and (max-width: 1600px) {
 
- 
+     #eventos-content .square {
+        top: -123%;
+    }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
-
-   
+@media (min-width: 1200px){
+.container {
+    width: 90% !important;
+}
 }
 
+
+
+@media (min-width: 1000px) and (max-width: 1345px){
+header ul li a{
+    font-size: 1.2rem
+}
+}
 
 
