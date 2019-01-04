@@ -15,6 +15,12 @@
 	}
 
 
+	function cerrarMenu(){
+		$(".overlay-xs-menu").fadeOut();
+		isOpen=0;
+	}
+
+
 
 	$(document).mouseup(function (e){
 
@@ -30,5 +36,16 @@
 		}
 	}); 
 
+
+	$("#cont-xs").click(function(){
+
+		setTimeout( function() {
+		 $(".overlay-xs-menu").fadeOut();
+		 isOpen=0;
+	  	}, 500);
+
+
+
+	})
 
 

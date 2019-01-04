@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width" />
-
-	<title>Document</title>
-	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css" />
-	<link rel="stylesheet" href="css/estilos.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<meta name="description" content="Darwin Tortugas | Un nuevo espacio. Un nuevo concepto.">
-  	<meta name="keywords" content="">
+<?php include("inc/head.php") ?>
 </head>
-<body>
+<body >
 	
 	<?php include("inc/header.php") ?>
 	
@@ -32,6 +18,12 @@
 		</div>
 		<div>
 			<div class="slide" id="slide-2">
+				
+			</div>
+		</div>
+
+		<div>
+			<div class="slide" id="slide-3">
 				
 			</div>
 		</div>
@@ -132,66 +124,36 @@
 		</div>	
 	</div>
 
-	<!--  <div class="owl-one owl-carousel owl-theme galeria" id="owl-3">
-		<div  id="slide-1">
-			<div class="slide-cont">
-				<div class="datos-square">
-					<h5 class="green">SUPERFICIE</h5>
-					<h5 class="black">TOTAL DEL TERRENO</h5>
-					<p><i>31.716 m2</i></p>
-					<br>
-					<h5 class="green">SUPERFICIE</h5>
-					<h5 class="black">CONSTRUIDA</h5>
-					<p><i>3000 m2</i></p>
-
-				</div>
-				<img src="img/slider/plano.png" alt=""  class="center-block">
-			</div>
-		</div>
-		<div id="slide-2">
-
-			<img src="img/slider/plano-datos.png" alt=""  class="center-block">
-			
-		</div>
-		<div id="slide-3">
-			<div class="slide-cont slide-jardin">
-				<div class="datos-square">
-					<img src="img/iso.png" alt="" class="iso">
-					<br>
-						<p>Los  jardínes de <span>Darwin Tortugas</span> crean <br> un ambiente con impronta y personalidad. <br>
-						<span>El origen del parque es francés y <br> perteneció a la familia Duhau.</span></p>
-
-					</div>
-				<img src="img/slider/jardines.jpg" alt=""style="" class="center-block">
-			</div>
-
-		</div>
-		<div id="slide-4">
-			<div class="slide-cont slide-palmeras center-block">
-				<div class="datos-square">
-					<img src="img/iso.png" alt="" class="iso">
-					<br>
-						<p>Sus árboles destacados son las avenidas de <span>Platanos, los <br> Robles, Alcanfores y sus 6 Palmeras con más de 7 mts de <br> altura.</span> En el año 1982 se pudieron incorporar otras variedades de <br> árboles como Fresnos, Tipas, entre otros, que forman el parque <br> que podemos disfrutar hoy en día.</p> 
-
-					</div>
-				<img src="img/slider/palmeras.jpg" alt="" class="">
-			</div>
-
-		</div>
-</div>-->
-
 <div class="owl-one owl-carousel owl-theme galeria" id="owl-3">
 		<div>
-			<img src="img/slider-prueba/1.png" alt=""  >
+			<img src="img/slider/1.png" alt=""  >
 		</div>
 		<div>
-			<img src="img/slider-prueba/2.png" alt=""  >
+			<img src="img/slider/2.png" alt=""  >
 		</div>
 		<div>
-			<img src="img/slider-prueba/3.png" alt=""  >
+			<img src="img/slider/3.png" alt=""  >
 		</div>
 		<div>
-			<img src="img/slider-prueba/4.png" alt=""  >
+			<img src="img/slider/4.png" alt=""  >
+		</div>
+
+</div>
+
+
+<div class="owl-one owl-carousel owl-theme galeria" id="owl-3-xs">
+		<div>
+			<img src="img/slider/plano-xs.png" alt=""  >
+		</div>
+		<div>
+			<img src="img/slider/plano-xs-2.png" alt=""  >
+		</div>
+		<div>
+			<img src="img/slider/plano-xs-3.png" alt=""  >
+
+		</div>
+		<div>
+			<img src="img/slider/plano-xs-4.png" alt=""  >
 		</div>
 
 </div>
@@ -271,83 +233,7 @@
 	<?php include("inc/scripts.php") ?>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-	<script>
-		function myMap() {
-
-
-
-		var mapOptions = {
-	        center: new google.maps.LatLng(-34.477751, -58.519464),
-	        zoom: 15,
-	        mapTypeId: google.maps.MapTypeId.HYBRID,
-	        mapTypeId: 'roadmap'
-	  	}
-
-
-
-
-	 	var bounds = new google.maps.LatLngBounds();
-
-
-
-
-		var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-
-
-		var infowindow = new google.maps.InfoWindow({
-		    content: "<span>Estudio Darwin <br><br>  <b><i>Avenida Bernabé Márquez 504, San Isidro, Buenos Aires</i></b></span>"
-		});
-
-
-
-		 var position = new google.maps.LatLng(-34.477751, -58.519464);
-
-
-
-		 	bounds.extend(position);
-
-
-
-			marker = new google.maps.Marker({
-            position: position,
-            map: map,
-		  	 icon:"img/iso-black-10.png"
-        });
-        
-
-
-
-
-
-
-        google.maps.event.addListener(marker, 'click', (function() {
-            return function() {
-                infowindow.open(map, marker);
-            }
-        })());
-
-		}
-
-
-	</script>
+	<script type="text/javascript" src="js/googleMaps.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkne1gpPfJ0B3KrE4OQURwPi492LDjg8g&callback=myMap"></script>
 	<script>
 		$(".bkground").height($("#contacto").height());
