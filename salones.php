@@ -48,6 +48,52 @@
 			</div>
 		</section>
 
+	
+
+	<div class="owl-carousel galeria owl-salones" id="">
+
+		<div>
+			<div class="slider">
+				<div class="overlay">
+					<div class="search-cont">
+						<a class="content" data-fancybox="galeria" href="img/galeria/1.jpg" data-caption="" >
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+				</div>
+				<img src="img/galeria/1.jpg" alt="">
+			</div>
+		</div>
+
+		<div>
+			<div class="slider">
+				<div class="overlay">
+					<div class="search-cont">
+			            <a class="content" data-fancybox="galeria" href="img/galeria/2.jpg" data-caption="" >
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+				</div>
+				<img src="img/galeria/2.jpg" alt="">
+			</div>
+		</div>
+
+		<div>
+			<div class="slider">
+				<div class="overlay">
+					<div class="search-cont">
+						<a class="content" data-fancybox="galeria" href="img/galeria/3.jpg" data-caption="" >
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+				</div>
+				<img src="img/galeria/3.jpg" alt="">
+			</div>
+		</div>
+
+	</div>
+	<br><br><br><br><br><br>
+
 		<section id="laguna">
 
 			<div class="owl-one owl-carousel owl-theme slider slider-middle" id="owl-5">
@@ -96,6 +142,51 @@
 
 
 	</section>
+	
+
+	<div class="owl-carousel galeria owl-salones" id="">
+
+		<div>
+			<div class="slider">
+				<div class="overlay">
+					<div class="search-cont">
+						<a class="content" data-fancybox="galeria" href="img/galeria/1.jpg" data-caption="" >
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+				</div>
+				<img src="img/galeria/1.jpg" alt="">
+			</div>
+		</div>
+
+		<div>
+			<div class="slider">
+				<div class="overlay">
+					<div class="search-cont">
+			            <a class="content" data-fancybox="galeria" href="img/galeria/2.jpg" data-caption="" >
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+				</div>
+				<img src="img/galeria/2.jpg" alt="">
+			</div>
+		</div>
+
+		<div>
+			<div class="slider">
+				<div class="overlay">
+					<div class="search-cont">
+						<a class="content" data-fancybox="galeria" href="img/galeria/3.jpg" data-caption="" >
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+				</div>
+				<img src="img/galeria/3.jpg" alt="">
+			</div>
+		</div>
+
+	</div>
+	<br><br><br><br><br><br><br><br><br>
 	
 	<?php include("inc/contacto.php") ?>
 	<?php include("inc/footer.php") ?>

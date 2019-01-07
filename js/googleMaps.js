@@ -3,10 +3,11 @@ function myMap() {
 
 
 		var mapOptions = {
-	        center: new google.maps.LatLng(-34.477751, -58.519464),
+	        center: new google.maps.LatLng(-34.454237, -58.762260),
 	        zoom: 15,
 	        mapTypeId: google.maps.MapTypeId.HYBRID,
-	        mapTypeId: 'roadmap'
+	        mapTypeId: 'roadmap',
+	        
 	  	}
 
 
@@ -21,12 +22,12 @@ function myMap() {
 
 
 		var infowindow = new google.maps.InfoWindow({
-		    content: "<span>Estudio Darwin <br><br>  <b><i>Avenida Bernabé Márquez 504, San Isidro, Buenos Aires</i></b></span>"
+		    content: "<span>Estudio Darwin <br><br>  <b><i>Hipólito Yrigoyen 1600, B1664 Manuel Alberti, Buenos Aires</i></b></span>"
 		});
 
 
 
-		 var position = new google.maps.LatLng(-34.477751, -58.519464);
+		 var position = new google.maps.LatLng(-34.454237, -58.762260);
 
 
 

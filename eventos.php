@@ -58,10 +58,10 @@
 						
 						<div class="salon-selector center-block">
 							<a href="salones.php#palmeras">
-								<div class="salon-select black"><h4 class="black">SALÓN <br><span> PALMERAS</span></h4></div>
+								<div class="salon-select black"><h4 class="black">SALÓN <br><span> PALMERAS</span></h4><h5>+ Info</h5></div>
 							</a>
 							<a href="salones.php#laguna">
-								<div class="salon-select white"><h4 class="black">SALÓN <br> <span> LAGUNA</span></h4></div>
+								<div class="salon-select white"><h4 class="black">SALÓN <br> <span> LAGUNA</span></h4><h5>+ Info</h5></div>
 							</a>
 						</div>
 
@@ -78,10 +78,10 @@
 					<div class="col-md-6 hidden-xs hidden-sm">
 						<div class="salon-selector center-block">
 							<a href="salones.php#palmeras">
-								<div class="salon-select black"><h4 class="black">SALÓN <br><span> PALMERAS</span></h4></div>
+								<div class="salon-select black"><h4 class="black">SALÓN <br><span> PALMERAS</span></h4><h5>+ Info</h5></div>
 							</a>
 							<a href="salones.php#laguna">
-								<div class="salon-select white"><h4 class="black">SALÓN <br> <span> LAGUNA</span></h4></div>
+								<div class="salon-select white"><h4 class="black">SALÓN <br> <span> LAGUNA</span></h4><h5>+ Info</h5></div>
 							</a>
 						</div>
 
@@ -100,6 +100,18 @@
 							<h4><span>EVENTOS</span>  CORPORATIVOS</h4>
 							<p>Ferias / Congresos / Festivales / Exposiciones / Presentaciones de autos / Lanzamiento de productos / Actividades Outdoors.</p>
 						</div>
+					</div>
+
+					<div class="hidden-lg hidden-md  col-sm-12">
+						<div class="salon-selector center-block">
+							<a href="salones.php#palmeras">
+								<div class="salon-select black"><h4 class="black">SALÓN <br><span> PALMERAS</span></h4><h5>+ Info</h5></div>
+							</a>
+							<a href="salones.php#laguna">
+								<div class="salon-select white"><h4 class="black">SALÓN <br> <span> LAGUNA</span></h4><h5>+ Info</h5></div>
+							</a>
+						</div>
+
 					</div>
 				</div>
 			</div>

@@ -40,6 +40,29 @@
 });
 
 
+
+  $('.owl-salones').owlCarousel({
+    loop:true,
+    margin:50,
+    autoplay:true,
+    autoplayTimeout:2000,
+    nav:false,
+    dots:false,
+    items:3,
+    responsive:{
+        0:{
+            items:2
+        },
+        850:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+});
+
+
   $('#owl-3').owlCarousel({
     loop:true,
     margin:300,

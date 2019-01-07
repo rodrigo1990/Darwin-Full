@@ -28,6 +28,8 @@
 			</div>
 		</div>
 	</div>
+
+<div id="galeria-planos"></div>
 <section id="galeria">
 	<div class="row subtitle">
 		<div class="container">
@@ -41,7 +43,7 @@
 			<div class="slider">
 				<div class="overlay">
 					<div class="search-cont">
-						<a class="content" data-fancybox href="img/galeria/1.jpg" data-caption="" >
+						<a class="content" data-fancybox="galeria" href="img/galeria/1.jpg" data-caption="" >
 							<i class="fas fa-search"></i>
 						</a>
 					</div>
@@ -54,7 +56,7 @@
 			<div class="slider">
 				<div class="overlay">
 					<div class="search-cont">
-			            <a class="content" data-fancybox href="img/galeria/2.jpg" data-caption="" >
+			            <a class="content" data-fancybox="galeria" href="img/galeria/2.jpg" data-caption="" >
 							<i class="fas fa-search"></i>
 						</a>
 					</div>
@@ -67,7 +69,7 @@
 			<div class="slider">
 				<div class="overlay">
 					<div class="search-cont">
-						<a class="content" data-fancybox href="img/galeria/3.jpg" data-caption="" >
+						<a class="content" data-fancybox="galeria" href="img/galeria/3.jpg" data-caption="" >
 							<i class="fas fa-search"></i>
 						</a>
 					</div>
@@ -75,8 +77,6 @@
 				<img src="img/galeria/3.jpg" alt="">
 			</div>
 		</div>
-
-		
 
 	</div>
 </section>
@@ -118,11 +118,11 @@
 <section id="galeria-planos">
 
 
-	<div class="row subtitle">
+	<!--  <div class="row subtitle">
 		<div class="container">
 			<img src="img/logo-green-black.png" alt="" class="logo">
 		</div>	
-	</div>
+	</div>-->
 
 <div class="owl-one owl-carousel owl-theme galeria" id="owl-3">
 		<div>
@@ -238,5 +238,6 @@
 	<script>
 		$(".bkground").height($("#contacto").height());
 	</script>
+
 </body>
 </html>

@@ -36,7 +36,7 @@ body{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: #5c9e7e; 
 }
 
 .subtitle{
@@ -606,6 +606,10 @@ header ul li a i:hover{
 }
 
 
+section#galeria-planos{
+    padding-top:5%;
+}
+
 
 
 /*************CLASES SOBREESCRITAS DESDE SECCION SLIDER*********************/
@@ -629,6 +633,10 @@ header ul li a i:hover{
 /*---------------------------------------------*/
                 /*NUESTROS SERVICIOS*/
 /*----------------------------------------------*/
+
+section#servicios{
+    margin-top: 2%;
+}
 
 
 .servicios-list ul {
@@ -761,8 +769,9 @@ header ul li a i:hover{
 #contacto{
     background-image: url(../img/galeria/2.jpg);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     width: 100%;
+    background-repeat: no-repeat;
 }
 
 
@@ -981,6 +990,7 @@ footer ul.right a b{
 #salones-content p  {
     margin-top: 5%;
     margin-bottom: 5%;
+    font-size: 1.6rem;
 }
 
 #salones-content hr {
@@ -1148,8 +1158,13 @@ width: 32%;
 
 }
     
-.salon-selector .salon-select h4{
+.salon-selector .salon-select h4, .salon-selector .salon-select h5{
     font-family: raleway-b;
+    text-align: center;
+}
+
+.salon-selector .salon-select h5{
+    color:grey;
 }
 
 

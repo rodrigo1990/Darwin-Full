@@ -1,7 +1,7 @@
 
 
-/*// Add smooth scrolling on all links inside the navbar
-$("#myNavbar a").on('click', function(event) {
+// Add smooth scrolling on all links inside the navbar
+$(".scroll-spy").on('click', function(event) {
 
   // Make sure this.hash has a value before overriding default behavior
   if (this.hash !== "") {
@@ -24,4 +24,4 @@ $("#myNavbar a").on('click', function(event) {
 
   } // End if
 
-});*/
+});

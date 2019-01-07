@@ -9,10 +9,10 @@
 
 				<div class="col-md-7 hidden-sm hidden-xs btn-cont">
 					<ul>
-						<li><a href="index.php#galeria" class="link-gal" >GALERÍA</a></li>
+						<li><a href="" class="link-gal" >GALERÍA</a></li>
 						<li><a href="salones.php">SALONES</a></li>
 						<li><a href="eventos.php">EVENTOS</a></li>
-						<li><a href="#contacto">CONTACTO</a></li>
+						<li><a href="#contacto" class="scroll-spy">CONTACTO</a></li>
 						<li>
 							<a href="https://www.instagram.com/darwin.tortugas/" target="_blank">
 								<i class="fab fa-instagram"></i>
