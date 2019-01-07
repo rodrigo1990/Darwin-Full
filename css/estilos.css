@@ -143,6 +143,11 @@ header ul li a:hover{
     text-decoration: none;
 }
 
+header ul li a:active,header ul li a:focus{
+    color:#6EC39A;
+    text-decoration: none;
+}
+
 header ul li a i {
     color:white;
     transition: color 0.5s;
